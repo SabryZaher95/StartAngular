@@ -1,0 +1,18 @@
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center text-uppercase text-dark pt-5">Portfolio</h2>
+        <div class="icon-wrap text-center">
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="row gy-5">
+            <div class="col-md-4 col-sm-6" *ngFor="let img of imgName">
+                <div class="box position-relative">
+                    <img src="{{path}}{{img}}" class="img-fluid d-block h-auto w-100" alt="portfolio1">
+                    <div class="overlay position-absolute top-50 start-50 translate-middle text-white">
+                        <i class="fa-solid fa-plus fa-2x position-absolute top-50 start translate-middle"></i>
+                    </div>                    
+                </div>   
+            </div>
+        </div>
+    </div>
+</section>

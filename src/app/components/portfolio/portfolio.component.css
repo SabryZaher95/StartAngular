@@ -1,0 +1,48 @@
+
+.icon-wrap{
+    position: relative; 
+    margin: 10px 0 25px;
+    padding: 1rem;    
+    font-size: 2.5rem;
+}
+
+.icon-wrap::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+    left: 38.7%;
+    width: 7rem;
+    background-color: #000;
+    height: 3px;
+    border-radius: 2px;
+}
+
+.icon-wrap::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+    left: 52.5%;
+    width: 7rem;
+    background-color: #000;
+    height: 3px;
+    border-radius: 2px;
+}
+
+.box .overlay{
+    font-weight: bold;
+    background-color: rgba(26,188,156, 0.5);
+    width: 100%;
+    font-size: 30px;
+    transition: opacity 0.5s;
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+    opacity: 0;
+}
+
+.box:hover .overlay{
+    opacity: 1;
+    cursor: pointer;
+}

@@ -1,0 +1,41 @@
+.hero{
+    padding-top: 100px;
+}
+
+.avatar{
+    width: 250px;
+}
+
+.icon-wrap{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.icon-wrap::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+    left: -150%;
+    width: 7.5rem;
+    background-color: #fff;
+    height: 3px;
+    border-radius: 2px;
+}
+
+.icon-wrap::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+    left: 93%;
+    width: 7.5rem;
+    background-color: #fff;
+    height: 3px;
+    border-radius: 2px;
+}

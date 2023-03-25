@@ -1,0 +1,30 @@
+.icon-wrap{
+    position: relative; 
+    padding: 1rem;    
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.icon-wrap::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+    left: 38.7%;
+    width: 7rem;
+    background-color: #fff;
+    height: 3px;
+    border-radius: 2px;
+}
+
+.icon-wrap::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+    left: 52.5%;
+    width: 7rem;
+    background-color: #fff;
+    height: 3px;
+    border-radius: 2px;
+}
